@@ -1,0 +1,192 @@
+dd#include "common.h"
+#nclude <signal.h>
+static volatile sig_atomic_t g_running = 1;
+static void on_signal(int sig){ log_error("Señal recibida %d, liberando recursos", sig); g_running = 0; }
+
+/* ================== MODO CURSES ================== */
+static void print_help_curses(void){
+    const char *h =
+        "Comandos internos:\n"
+        "  ayuda                 - Muestra esta ayuda\n"
+        "  terminar              - Termina la ejecución\n"
+        "  bitacora_comandos     - Muestra la bitácora de comandos ejecutados\n"
+        "  bitacora_error        - Muestra la bitácora de errores\n"
+        "  showconf              - Muestra configuración\n"
+        "  setconf k=v           - Actualiza el archivo de configuración\n"
+        "  cd <ruta>             - Cambia de directorio\n"
+        "Cualquier otro texto se ejecuta como comando del sistema (/bin/sh -c ...)\n";
+    clear();
+    mvprintw(0,0,"%s", h);
+    mvprintw(LINES-1,0,"Presiona cualquier tecla para continuar...");
+    refresh();
+    getch();
+}
+
+static int exec_and_capture_curses(const char *cmd){
+    log_command("exec: %s", cmd);
+    FILE *p = popen(cmd, "r");
+    if(!p){ log_error("popen falló: %s", strerror(errno)); return -1; }
+    clear();
+    mvprintw(0,0,"$ %s", cmd);
+    int r=1, c=0; getmaxyx(stdscr, r, c);
+    char line[1024]; int row=1;
+    while(fgets(line, sizeof(line), p)){
+        if(row >= r-1){
+            mvprintw(r-1,0,"-- Más -- (q para salir, otra tecla para continuar)");
+            refresh();
+            int ch = getch();
+            if(ch=='q'||ch=='Q') break;
+            clear(); mvprintw(0,0,"$ %s (continúa)", cmd); row=1;
+        }
+        line[c-1]='\0'; mvprintw(row++,0,"%s", line);
+    }
+    int status = pclose(p);
+    if(status == -1){ log_error("pclose falló: %s", strerror(errno)); return -1; }
+    if(WIFEXITED(status)){ int code = WEXITSTATUS(status); if(code!=0) log_error("Comando terminó con código %d: %s", code, cmd); }
+    else if(WIFSIGNALED(status)){ int s = WTERMSIG(status); log_error("Comando terminó por señal %d: %s", s, cmd); }
+    mvprintw(LINES-1,0,"(fin de salida)  Presiona cualquier tecla...");
+    refresh(); getch(); return 0;
+}
+
+static void show_logs_curses(bool error_log){
+    char cmd_path[PATH_MAX], err_path[PATH_MAX];
+    resolve_paths(cmd_path, sizeof(cmd_path), err_path, sizeof(err_path));
+    curses_pager(error_log?err_path:cmd_path, error_log?"Bitácora de Errores":"Bitácora de Comandos");
+}
+
+static void show_conf_curses(void){
+    clear();
+    mvprintw(0,0,"Configuración actual:");
+    mvprintw(2,0,"PROGRAM_NAME = %s", g_cfg.program_name);
+    mvprintw(3,0,"MAX_INSTANCES = %d", g_cfg.max_instances);
+    mvprintw(4,0,"LOG_DIR = %s", g_cfg.log_dir);
+    mvprintw(6,0,"Archivo conf = %s", g_cfg.conf_path);
+    mvprintw(LINES-1,0,"Presiona una tecla para continuar...");
+    refresh(); getch();
+}
+
+static void ui_loop_curses(void){
+    char input[1024];
+    while(g_running){
+        clear();
+        mvprintw(0,0,"%s (máx instancias: %d) - escribe 'ayuda' para ayuda", g_cfg.program_name, g_cfg.max_instances);
+        mvprintw(1,0,"Directorio actual: ");
+        char cwd[PATH_MAX]; getcwd(cwd, sizeof(cwd));
+        mvprintw(1,19,"%s", cwd);
+        mvprintw(3,0,"$ "); refresh();
+        echo(); curs_set(1);
+        getnstr(input, sizeof(input)-1);
+        noecho(); curs_set(0);
+        trim(input); if(strlen(input)==0) continue;
+
+        if(strcmp(input, "terminar")==0) break;
+        else if(strcmp(input, "ayuda")==0) print_help_curses();
+        else if(strcmp(input, "bitacora_comandos")==0) show_logs_curses(false);
+        else if(strcmp(input, "bitacora_error")==0) show_logs_curses(true);
+        else if(strcmp(input, "showconf")==0) show_conf_curses();
+        else if(strncmp(input, "setconf ", 8)==0){
+            char *kv = input+8; char *eq = strchr(kv,'=');
+            if(!eq){ log_error("Uso: setconf clave=valor"); }
+            else { *eq='\0'; char *key=kv; char *val=eq+1; trim(key); trim(val);
+                   if(set_config_key(g_cfg.conf_path, key, val)==0){ load_config(g_cfg.conf_path, &g_cfg); log_command("setconf %s=%s", key, val); }
+                   else log_error("No se pudo escribir configuración"); }
+        } else if(strncmp(input,"cd ",3)==0){
+            char *dir = input+3; trim(dir);
+            if(chdir(dir)!=0) log_error("cd %s falló: %s", dir, strerror(errno));
+            else log_command("cd %s", dir);
+        } else exec_and_capture_curses(input);
+    }
+}
+
+/* ================== MODO TEXTO (fallback) ================== */
+static void print_help_plain(void){
+    puts("Comandos internos:");
+    puts("  ayuda                 - Muestra esta ayuda");
+    puts("  terminar              - Termina la ejecución");
+    puts("  bitacora_comandos     - Muestra la bitácora de comandos ejecutados");
+    puts("  bitacora_error        - Muestra la bitácora de errores");
+    puts("  showconf              - Muestra configuración");
+    puts("  setconf k=v           - Actualiza el archivo de configuración");
+    puts("  cd <ruta>             - Cambia de directorio");
+    puts("Cualquier otro texto se ejecuta como comando del sistema (/bin/sh -c ...)");
+}
+
+static int exec_and_capture_plain(const char *cmd){
+    log_command("exec: %s", cmd);
+    FILE *p = popen(cmd, "r");
+    if(!p){ log_error("popen falló: %s", strerror(errno)); return -1; }
+    char line[1024];
+    while(fgets(line, sizeof(line), p)){ fputs(line, stdout); }
+    int status = pclose(p);
+    if(status == -1){ log_error("pclose falló: %s", strerror(errno)); return -1; }
+    if(WIFEXITED(status)){ int code = WEXITSTATUS(status); if(code!=0) log_error("Comando terminó con código %d: %s", code, cmd); }
+    else if(WIFSIGNALED(status)){ int s = WTERMSIG(status); log_error("Comando terminó por señal %d: %s", s, cmd); }
+    return 0;
+}
+
+static void show_conf_plain(void){
+    printf("PROGRAM_NAME = %s\n", g_cfg.program_name);
+    printf("MAX_INSTANCES = %d\n", g_cfg.max_instances);
+    printf("LOG_DIR = %s\n", g_cfg.log_dir);
+    printf("Archivo conf = %s\n", g_cfg.conf_path);
+}
+
+static void show_logs_plain(bool error_log){
+    char cmd_path[PATH_MAX], err_path[PATH_MAX];
+    resolve_paths(cmd_path, sizeof(cmd_path), err_path, sizeof(err_path));
+    const char *fp = error_log ? err_path : cmd_path;
+    FILE *f = fopen(fp,"r");
+    if(!f){ log_error("No se pudo abrir %s: %s", fp, strerror(errno)); return; }
+    char line[1024]; while(fgets(line,sizeof(line),f)) fputs(line, stdout);
+    fclose(f);
+}
+
+static void ui_loop_plain(void){
+    char input[1024];
+    while(g_running){
+        char cwd[PATH_MAX]; getcwd(cwd, sizeof(cwd));
+        printf("%s (%s) $ ", g_cfg.program_name, cwd);
+        fflush(stdout);
+        if(!fgets(input, sizeof(input), stdin)) break;
+        trim(input); if(strlen(input)==0) continue;
+
+        if(strcmp(input,"terminar")==0) break;
+        else if(strcmp(input,"ayuda")==0) print_help_plain();
+        else if(strcmp(input,"showconf")==0) show_conf_plain();
+        else if(strcmp(input,"bitacora_comandos")==0) show_logs_plain(false);
+        else if(strcmp(input,"bitacora_error")==0) show_logs_plain(true);
+        else if(strncmp(input,"setconf ",8)==0){
+            char *kv = input+8; char *eq = strchr(kv,'=');
+            if(!eq){ puts("Uso: setconf clave=valor"); }
+            else { *eq='\0'; char *key=kv; char *val=eq+1; trim(key); trim(val);
+                   if(set_config_key(g_cfg.conf_path, key, val)==0){ load_config(g_cfg.conf_path, &g_cfg); log_command("setconf %s=%s", key, val); }
+                   else puts("No se pudo escribir configuración"); }
+        } else if(strncmp(input,"cd ",3)==0){
+            char *dir = input+3; trim(dir);
+            if(chdir(dir)!=0) { printf("cd %s: %s\n", dir, strerror(errno)); log_error("cd %s falló: %s", dir, strerror(errno)); }
+            else log_command("cd %s", dir);
+        } else exec_and_capture_plain(input);
+    }
+}
+
+/* ================== MAIN ================== */
+static void end_curses(void){ endwin(); }
+
+int main(int argc, char **argv){
+    /* Desactiva todos los búferes -- salida inmediata */
+    setbuf(stdout, NULL);
+    setbuf(stderr, NULL);
+
+    printf(">>> UAMASHELL arranca (modo depuración plano)\n");
+
+    /* Lee una línea y la imprime tal cual para verificar eco IO */
+    char buf[256];
+    printf("Escribe algo y ENTER (o Ctrl-D para salir): ");
+    if(!fgets(buf, sizeof(buf), stdin)){
+        printf("\nEOF\n");
+        return 0;
+    }
+    printf("Recibido: %s\n", buf);
+    return 0;
+}
+
