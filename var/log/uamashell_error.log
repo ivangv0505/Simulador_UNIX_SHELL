@@ -1,0 +1,112 @@
+[2025-08-06 21:38:22] ERR pid=1493 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 21:41:12] ERR pid=1496 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 21:45:45] ERR pid=1662 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 21:45:52] ERR pid=1670 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 21:47:48] ERR pid=1674 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 21:48:06] ERR pid=1689 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 21:48:40] ERR pid=1694 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 21:51:13] ERR pid=1772 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 21:53:56] ERR pid=1836 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 21:57:03] ERR pid=1939 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 21:58:58] ERR pid=1995 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 22:03:16] ERR pid=2097 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 22:05:13] ERR pid=2118 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 22:10:15] ERR pid=2242 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 22:14:51] ERR pid=2430 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 22:18:00] ERR pid=2600 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 22:22:07] ERR pid=2782 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 22:22:33] ERR pid=2789 user=mn-4-44 tty=n/a ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 22:24:27] ERR pid=2794 user=mn-4-44 tty=n/a ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 22:28:50] ERR pid=2968 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 22:35:30] ERR pid=3272 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 22:50:06] ERR pid=3895 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 22:55:45] ERR pid=4043 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 22:57:44] ERR pid=4083 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 22:57:54] ERR pid=4085 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 23:05:28] ERR pid=4398 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 23:10:32] ERR pid=4455 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 23:15:10] ERR pid=4667 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 23:16:30] ERR pid=4734 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 23:16:35] ERR pid=4735 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 23:21:15] ERR pid=4858 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-06 23:26:40] ERR pid=4959 user=mn-4-44 tty=/dev/pts/12 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 00:21:43] ERR pid=5798 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 00:21:54] ERR pid=5800 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 00:24:32] ERR pid=5831 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 00:25:16] ERR pid=5861 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 00:25:26] ERR pid=5863 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 00:25:39] ERR pid=5866 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 00:31:12] ERR pid=5976 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 00:31:55] ERR pid=5987 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 12:19:19] ERR pid=12638 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 12:24:38] ERR pid=12671 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 12:31:04] ERR pid=12746 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 12:34:02] ERR pid=12760 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 12:34:18] ERR pid=12783 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 12:42:45] ERR pid=12897 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 12:54:35] ERR pid=12973 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 12:57:47] ERR pid=13024 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 13:00:49] ERR pid=13044 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 13:02:59] ERR pid=13093 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 13:11:47] ERR pid=13274 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 13:15:18] ERR pid=13325 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 13:24:51] ERR pid=13391 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 13:27:25] ERR pid=13415 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 13:31:38] ERR pid=13439 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 13:33:45] ERR pid=13489 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 13:40:46] ERR pid=13659 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 13:47:07] ERR pid=13782 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 13:51:57] ERR pid=13841 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 14:04:14] ERR pid=13934 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 14:04:33] ERR pid=13943 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 14:18:19] ERR pid=14063 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 14:24:32] ERR pid=14093 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 14:33:28] ERR pid=14143 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 15:12:12] ERR pid=14628 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 15:15:56] ERR pid=14691 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 15:20:45] ERR pid=14825 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 20:29:54] ERR pid=17985 user=mn-4-44 tty=/dev/pts/3 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 20:36:10] ERR pid=18054 user=mn-4-44 tty=/dev/pts/3 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-07 22:05:52] ERR pid=18887 user=mn-4-44 tty=/dev/pts/3 ip=189.131.72.175 :: Comando terminó 127: setconf
+[2025-08-07 22:24:33] ERR pid=19157 user=mn-4-44 tty=/dev/pts/3 ip=189.131.72.175 :: Comando terminó 127: TERMINAR
+[2025-08-07 22:32:18] ERR pid=19273 user=mn-4-44 tty=/dev/pts/3 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-08 00:31:12] ERR pid=20785 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Comando terminó 127: bitacora_ccomandos
+[2025-08-08 01:13:19] ERR pid=21110 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Comando terminó 127: j
+[2025-08-08 01:13:23] ERR pid=21110 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Comando terminó 127: hola
+[2025-08-08 01:21:07] ERR pid=21110 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: Comando terminó 127: SHOWCONF
+[2025-08-08 22:46:29] ERR pid=4349 user=mn-4-44 tty=/dev/pts/1 ip=189.131.72.175 :: Comando terminó con código 127: dueno
+[2025-08-09 14:29:37] ERR pid=18438 user=mn-4-44 tty=/dev/pts/6 ip=189.131.72.175 :: Acceso concurrente a pruebaU.txt :: dueño{pid=18254
+user=mn-4-44
+tty=/dev/pts/0
+ip=189.131.72.175
+cmd=nano pruebaU.txt
+file=pruebaU.txt
+} :: competidor{pid=18438 user=mn-4-44 tty=/dev/pts/6 ip=189.131.72.175 cmd=nano pruebaU.txt}
+[2025-08-09 14:30:26] ERR pid=18438 user=mn-4-44 tty=/dev/pts/6 ip=189.131.72.175 :: Acceso concurrente a pruebaU.txt :: dueño{pid=18254
+user=mn-4-44
+tty=/dev/pts/0
+ip=189.131.72.175
+cmd=nano pruebaU.txt
+file=pruebaU.txt
+} :: competidor{pid=18438 user=mn-4-44 tty=/dev/pts/6 ip=189.131.72.175 cmd=nano pruebaU.txt}
+[2025-08-09 17:04:50] ERR pid=22437 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: Comando terminó con código 2: --server
+[2025-08-09 17:06:52] ERR pid=22453 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: REMOTO: intento NO AUTORIZADO desde ip=127.0.0.1 ; hello=HELLO user=mn-4-44 pid=22530 tty=/dev/pts/5 ip=189.131.72.175
+[2025-08-09 17:06:52] ERR pid=22530 user=mn-4-44 tty=/dev/pts/5 ip=189.131.72.175 :: Remoto: fallo de conexion a 127.0.0.1:5050 (Permission denied)
+[2025-08-09 17:18:24] ERR pid=22772 user=mn-4-44 tty=/dev/pts/7 ip=189.131.72.175 :: Remoto: fallo de conexion a 127.0.0.1:5050 (Connection refused)
+[2025-08-09 17:20:15] ERR pid=22920 user=mn-4-44 tty=/dev/pts/7 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-09 17:30:43] ERR pid=23085 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-09 17:30:43] ERR pid=23085 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Remoto: fallo de conexion a 128.0.0.1:5050 (Interrupted system call)
+[2025-08-09 17:31:10] ERR pid=23100 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Señal recibida 2, liberando recursos
+[2025-08-09 17:31:10] ERR pid=23100 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Remoto: fallo de conexion a 128.0.0.1:5050 (Interrupted system call)
+[2025-08-09 17:31:21] ERR pid=23105 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Remoto: fallo de conexion a 134:5050 (Invalid argument)
+[2025-08-09 17:33:37] ERR pid=23105 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Remoto: fallo de conexion a 134.1.1.2:5050 (Connection timed out)
+[2025-08-13 16:07:50] ERR pid=2809 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: REMOTO: no se pudo ligar al puerto 5050
+[2025-08-13 16:21:43] ERR pid=25778 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: Acceso concurrente a prueba.txt :: dueño{pid=19539
+user=mn-4-31
+tty=/dev/pts/8
+ip=189.131.72.175
+cmd=nano prueba.txt
+file=prueba.txt
+} :: competidor{pid=25778 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 cmd=nano prueba.txt}
+[2025-08-13 19:39:25] ERR pid=31229 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 127: bitacora_erorr
+[2025-08-13 19:40:02] ERR pid=31229 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 127: showconf�

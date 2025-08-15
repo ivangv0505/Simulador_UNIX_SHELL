@@ -1,0 +1,147 @@
+[2025-08-07 17:30:13] CMD pid=16456 user=mn-4-44 tty=/dev/pts/9 ip=189.131.72.175 :: exec: set conf k=v
+[2025-08-07 17:30:39] CMD pid=16456 user=mn-4-44 tty=/dev/pts/9 ip=189.131.72.175 :: exec: ls
+[2025-08-07 17:30:45] CMD pid=16456 user=mn-4-44 tty=/dev/pts/9 ip=189.131.72.175 :: cd ..
+[2025-08-07 17:30:47] CMD pid=16456 user=mn-4-44 tty=/dev/pts/9 ip=189.131.72.175 :: exec: ls
+[2025-08-07 17:54:09] CMD pid=16722 user=mn-4-44 tty=/dev/pts/9 ip=189.131.72.175 :: setconf k=v
+[2025-08-07 18:05:53] CMD pid=16974 user=mn-4-44 tty=/dev/pts/9 ip=189.131.72.175 :: setconf k=v
+[2025-08-07 20:38:09] CMD pid=18128 user=mn-4-44 tty=/dev/pts/3 ip=189.131.72.175 :: setconf k=v
+[2025-08-07 21:53:36] CMD pid=18672 user=mn-4-44 tty=/dev/pts/3 ip=189.131.72.175 :: setconf k=v
+[2025-08-07 21:56:53] CMD pid=18672 user=mn-4-44 tty=/dev/pts/3 ip=189.131.72.175 :: exec: ls
+[2025-08-07 22:05:52] CMD pid=18887 user=mn-4-44 tty=/dev/pts/3 ip=189.131.72.175 :: exec: setconf
+[2025-08-07 22:05:56] CMD pid=18887 user=mn-4-44 tty=/dev/pts/3 ip=189.131.72.175 :: setconf k=v
+[2025-08-07 22:09:20] CMD pid=18961 user=mn-4-44 tty=/dev/pts/3 ip=189.131.72.175 :: setconf k=v
+[2025-08-07 22:24:33] CMD pid=19157 user=mn-4-44 tty=/dev/pts/3 ip=189.131.72.175 :: exec: TERMINAR
+[2025-08-07 22:32:06] CMD pid=19273 user=mn-4-44 tty=/dev/pts/3 ip=189.131.72.175 :: setconf MAX=3
+[2025-08-07 22:34:48] CMD pid=19339 user=mn-4-44 tty=/dev/pts/3 ip=189.131.72.175 :: setconf MAX_INSTANCES=5
+[2025-08-07 22:38:06] CMD pid=19339 user=mn-4-44 tty=/dev/pts/3 ip=189.131.72.175 :: exec: sed -n '1,10p' ./etc/uamashell.conf
+[2025-08-07 22:44:28] CMD pid=19477 user=mn-4-44 tty=/dev/pts/3 ip=189.131.72.175 :: exec: ls
+[2025-08-07 22:44:58] CMD pid=19477 user=mn-4-44 tty=/dev/pts/3 ip=189.131.72.175 :: setconf MAX_INSTANCES=3
+[2025-08-08 00:31:12] CMD pid=20785 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: exec: bitacora_ccomandos
+[2025-08-08 01:13:19] CMD pid=21110 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: exec: j
+[2025-08-08 01:13:23] CMD pid=21110 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: exec: hola
+[2025-08-08 01:14:59] CMD pid=21110 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: setconf MAX_INSTANCES=4
+[2025-08-08 01:16:38] CMD pid=21110 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: exec: set conf
+[2025-08-08 01:16:54] CMD pid=21110 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: exec: exit
+[2025-08-08 01:20:39] CMD pid=21162 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: exec: set conf MAX_DISTANCES=4
+[2025-08-08 01:20:52] CMD pid=21162 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: setconf MAX_DISTANCES=4
+[2025-08-08 01:21:07] CMD pid=21110 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: exec: SHOWCONF
+[2025-08-08 01:22:40] CMD pid=21110 user=mn-4-44 tty=/dev/pts/2 ip=189.131.72.175 :: exec: ls
+[2025-08-08 22:01:57] CMD pid=3960 user=mn-4-44 tty=/dev/pts/1 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-08 22:46:29] CMD pid=4349 user=mn-4-44 tty=/dev/pts/1 ip=189.131.72.175 :: Comando terminó con código 127: dueno
+[2025-08-08 23:06:13] CMD pid=4572 user=mn-4-44 tty=/dev/pts/1 ip=189.131.72.175 :: Comando terminó con código 0: ls
+[2025-08-09 14:12:54] CMD pid=18254 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: Comando terminó con código 0: echo hola > prueba.txt
+[2025-08-09 14:16:05] CMD pid=18359 user=mn-4-44 tty=/dev/pts/6 ip=189.131.72.175 :: Comando terminó con código 0: grep hola prueba.txt
+[2025-08-09 14:16:42] CMD pid=18254 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: Comando terminó con código 0: cat prueba.txt
+[2025-08-09 14:17:25] CMD pid=18254 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: Comando terminó con código 0: ls
+[2025-08-09 14:17:54] CMD pid=18254 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-09 14:18:25] CMD pid=18254 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: Comando terminó con código 0: echo hola > pruebaU.txt
+[2025-08-09 14:18:46] CMD pid=18254 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: Comando terminó con código 0: cat pruebaU.txt
+[2025-08-09 14:21:00] CMD pid=18438 user=mn-4-44 tty=/dev/pts/6 ip=189.131.72.175 :: Comando terminó con código 0: ls
+[2025-08-09 14:21:14] CMD pid=18438 user=mn-4-44 tty=/dev/pts/6 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-09 14:21:15] CMD pid=18438 user=mn-4-44 tty=/dev/pts/6 ip=189.131.72.175 :: Comando terminó con código 0: ls
+[2025-08-09 14:21:25] CMD pid=18438 user=mn-4-44 tty=/dev/pts/6 ip=189.131.72.175 :: Comando terminó con código 0: grep hola pruebaU.txt
+[2025-08-09 14:21:33] CMD pid=18254 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: Comando terminó con código 0: nano pruebaU.txt
+[2025-08-09 14:21:44] CMD pid=18254 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: Comando terminó con código 0: cat pruebaU.txt
+[2025-08-09 14:21:53] CMD pid=18438 user=mn-4-44 tty=/dev/pts/6 ip=189.131.72.175 :: Comando terminó con código 0: grep hola pruebaU.txt
+[2025-08-09 14:29:08] CMD pid=18254 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: Comando terminó con código 0: ls
+[2025-08-09 14:30:21] CMD pid=18438 user=mn-4-44 tty=/dev/pts/6 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-09 14:31:06] CMD pid=18438 user=mn-4-44 tty=/dev/pts/6 ip=189.131.72.175 :: Comando terminó con código 0: ls
+[2025-08-09 14:33:15] CMD pid=18254 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: Comando terminó con código 0: nano pruebaU.txt
+[2025-08-09 17:04:50] CMD pid=22437 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: Comando terminó con código 2: --server
+[2025-08-09 17:05:36] CMD pid=22453 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: REMOTO: servidor escuchando en puerto 5050 ; allowed='10.0.0.5,192.168.1.20'
+[2025-08-09 17:12:17] CMD pid=22682 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: REMOTO: servidor escuchando en puerto 5050 ; allowed='127.0.0.1,::1'
+[2025-08-09 17:13:33] CMD pid=22682 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: REMOTO: conexion aceptada desde ip=127.0.0.1 ; HELLO user=mn-4-44 pid=22772 tty=/dev/pts/7 ip=189.131.72.175
+[2025-08-09 17:13:33] CMD pid=22772 user=mn-4-44 tty=/dev/pts/7 ip=189.131.72.175 :: Remoto: conectado a 127.0.0.1:5050
+[2025-08-09 17:13:53] CMD pid=22772 user=mn-4-44 tty=/dev/pts/7 ip=189.131.72.175 :: Comando terminó con código 0: echo hola > remoto.txt
+[2025-08-09 17:13:59] CMD pid=22772 user=mn-4-44 tty=/dev/pts/7 ip=189.131.72.175 :: Remoto: desconectando de 127.0.0.1
+[2025-08-09 17:13:59] CMD pid=22682 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: REMOTO: desconexion desde ip=127.0.0.1
+[2025-08-09 17:18:35] CMD pid=22751 user=mn-4-44 tty=/dev/pts/7 ip=189.131.72.175 :: Comando terminó con código 0: ./bin/uamashell
+[2025-08-09 17:19:21] CMD pid=22919 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: REMOTO: servidor escuchando en puerto 5050 ; allowed='127.0.0.1,::1'
+[2025-08-09 17:19:32] CMD pid=22920 user=mn-4-44 tty=/dev/pts/7 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-09 17:20:15] CMD pid=22920 user=mn-4-44 tty=/dev/pts/7 ip=189.131.72.175 :: Comando terminó con código 0: tail -f var/log/uamashell.log
+[2025-08-09 17:20:22] CMD pid=22944 user=mn-4-44 tty=/dev/pts/7 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-09 17:20:48] CMD pid=22919 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: REMOTO: conexion aceptada desde ip=127.0.0.1 ; HELLO user=mn-4-44 pid=22944 tty=/dev/pts/7 ip=189.131.72.175
+[2025-08-09 17:20:48] CMD pid=22944 user=mn-4-44 tty=/dev/pts/7 ip=189.131.72.175 :: Remoto: conectado a 127.0.0.1:5050
+[2025-08-09 17:21:40] CMD pid=22944 user=mn-4-44 tty=/dev/pts/7 ip=189.131.72.175 :: Comando terminó con código 0: echo hola > remoto.txt
+[2025-08-09 17:22:06] CMD pid=22919 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: REMOTO: conexion aceptada desde ip=127.0.0.1 ; HELLO user=mn-4-44 pid=22974 tty=/dev/pts/7 ip=189.131.72.175
+[2025-08-09 17:22:06] CMD pid=22974 user=mn-4-44 tty=/dev/pts/7 ip=189.131.72.175 :: Remoto: conectado a 127.0.0.1:5050
+[2025-08-09 17:22:49] CMD pid=22974 user=mn-4-44 tty=/dev/pts/7 ip=189.131.72.175 :: Remoto: desconectando de 127.0.0.1
+[2025-08-09 17:22:49] CMD pid=22919 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: REMOTO: desconexion desde ip=127.0.0.1
+[2025-08-09 17:27:59] CMD pid=23061 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: REMOTO: servidor escuchando en puerto 5050 ; allowed='127.0.0.1,::1'
+[2025-08-09 17:28:30] CMD pid=23085 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-09 17:28:42] CMD pid=23061 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: REMOTO: conexion aceptada desde ip=127.0.0.1 ; HELLO user=mn-4-44 pid=23085 tty=/dev/pts/4 ip=189.131.72.175
+[2025-08-09 17:28:42] CMD pid=23085 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Remoto: conectado a 127.0.0.1:5050
+[2025-08-09 17:29:52] CMD pid=23085 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Comando terminó con código 0: echo hola > remoto.txt
+[2025-08-09 17:30:01] CMD pid=23085 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Remoto: desconectando de 127.0.0.1
+[2025-08-09 17:30:01] CMD pid=23061 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: REMOTO: desconexion desde ip=127.0.0.1
+[2025-08-09 17:30:20] CMD pid=23061 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: REMOTO: conexion aceptada desde ip=127.0.0.1 ; HELLO user=mn-4-44 pid=23085 tty=/dev/pts/4 ip=189.131.72.175
+[2025-08-09 17:30:20] CMD pid=23085 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Remoto: conectado a 127.0.1.1:5050
+[2025-08-09 17:30:29] CMD pid=23085 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Remoto: desconectando de 127.0.1.1
+[2025-08-09 17:30:29] CMD pid=23061 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: REMOTO: desconexion desde ip=127.0.0.1
+[2025-08-09 17:30:53] CMD pid=23100 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-09 17:38:22] CMD pid=23174 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: REMOTO: servidor escuchando en puerto 5050 ; allowed='127.0.0.1,::1'
+[2025-08-09 17:39:00] CMD pid=23201 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-09 17:39:06] CMD pid=23174 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: REMOTO: conexion aceptada desde ip=127.0.0.1 ; HELLO user=mn-4-44 pid=23201 tty=/dev/pts/4 ip=189.131.72.175
+[2025-08-09 17:39:06] CMD pid=23201 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Remoto: conectado a 127.0.0.1:5050
+[2025-08-09 17:39:14] CMD pid=23201 user=mn-4-44 tty=/dev/pts/4 ip=189.131.72.175 :: Remoto: desconectando de 127.0.0.1
+[2025-08-09 17:39:14] CMD pid=23174 user=mn-4-44 tty=/dev/pts/0 ip=189.131.72.175 :: REMOTO: desconexion desde ip=127.0.0.1
+[2025-08-13 16:07:34] CMD pid=2370 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 16:09:12] CMD pid=4539 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: setconf REMOTE_PORT=5051
+[2025-08-13 16:09:24] CMD pid=5186 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: REMOTO: servidor escuchando en puerto 5051 ; allowed='127.0.0.1,::1'
+[2025-08-13 16:11:35] CMD pid=7111 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 16:11:44] CMD pid=7111 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: Comando terminó con código 0: ls
+[2025-08-13 16:11:47] CMD pid=7111 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 16:13:24] CMD pid=7111 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: Comando terminó con código 0: ls
+[2025-08-13 16:14:06] CMD pid=5186 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: REMOTO: conexion aceptada desde ip=127.0.0.1 ; HELLO user=mn-4-31 pid=7111 tty=/dev/pts/27 ip=189.131.72.175
+[2025-08-13 16:14:06] CMD pid=7111 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: Remoto: conectado a 127.0.0.1:5051
+[2025-08-13 16:14:25] CMD pid=7111 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: Remoto: desconectando de 127.0.0.1
+[2025-08-13 16:14:25] CMD pid=5186 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: REMOTO: desconexion desde ip=127.0.0.1
+[2025-08-13 16:18:18] CMD pid=19539 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 16:19:20] CMD pid=19539 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 16:19:52] CMD pid=19539 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 16:20:32] CMD pid=19539 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 16:20:40] CMD pid=19539 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: ls
+[2025-08-13 16:21:24] CMD pid=19539 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: nano prueba.txt
+[2025-08-13 16:21:39] CMD pid=25778 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 16:21:40] CMD pid=25778 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: Comando terminó con código 0: ls
+[2025-08-13 16:21:54] CMD pid=19539 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: nano prueba.txt
+[2025-08-13 16:21:56] CMD pid=19539 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: ls
+[2025-08-13 16:21:58] CMD pid=19539 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 16:22:28] CMD pid=27190 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: REMOTO: servidor escuchando en puerto 5051 ; allowed='127.0.0.1,::1'
+[2025-08-13 16:22:55] CMD pid=27190 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: REMOTO: conexion aceptada desde ip=127.0.0.1 ; HELLO user=mn-4-31 pid=19539 tty=/dev/pts/8 ip=189.131.72.175
+[2025-08-13 16:22:55] CMD pid=19539 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Remoto: conectado a 127.0.0.1:5051
+[2025-08-13 16:23:21] CMD pid=19539 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Remoto: desconectando de 127.0.0.1
+[2025-08-13 16:23:21] CMD pid=27190 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: REMOTO: desconexion desde ip=127.0.0.1
+[2025-08-13 16:24:00] CMD pid=19539 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 17:03:00] CMD pid=18622 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 17:16:42] CMD pid=7087 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 17:16:51] CMD pid=7375 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 17:17:14] CMD pid=7375 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: Comando terminó con código 0: ls
+[2025-08-13 17:17:19] CMD pid=7375 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: cd ..
+[2025-08-13 17:17:19] CMD pid=7375 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: Comando terminó con código 0: ls
+[2025-08-13 17:38:58] CMD pid=8881 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 17:41:11] CMD pid=12234 user=mn-4-31 tty=/dev/pts/49 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 17:41:50] CMD pid=13233 user=mn-4-31 tty=/dev/pts/17 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 17:42:01] CMD pid=8881 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 18:52:09] CMD pid=21062 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 19:11:06] CMD pid=2861 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 19:38:26] CMD pid=31229 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 19:39:16] CMD pid=31229 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 19:39:25] CMD pid=31229 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 127: bitacora_erorr
+[2025-08-13 19:39:54] CMD pid=31229 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 19:39:54] CMD pid=31229 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: ls
+[2025-08-13 19:40:02] CMD pid=31229 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 127: showconf�
+[2025-08-13 19:40:16] CMD pid=31229 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 19:41:14] CMD pid=31229 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: nano prueba.txt
+[2025-08-13 19:41:38] CMD pid=31229 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: nano prueba.txt
+[2025-08-13 19:42:04] CMD pid=31229 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: nano prueba.txt
+[2025-08-13 19:42:20] CMD pid=31229 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 19:42:56] CMD pid=3934 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 19:43:12] CMD pid=4262 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: REMOTO: servidor escuchando en puerto 5051 ; allowed='127.0.0.1,::1'
+[2025-08-13 19:43:33] CMD pid=4262 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: REMOTO: conexion aceptada desde ip=127.0.0.1 ; HELLO user=mn-4-31 pid=31229 tty=/dev/pts/8 ip=189.131.72.175
+[2025-08-13 19:43:33] CMD pid=31229 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Remoto: conectado a 127.0.0.1:5051
+[2025-08-13 19:43:57] CMD pid=31229 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Remoto: desconectando de 127.0.0.1
+[2025-08-13 19:43:57] CMD pid=4262 user=mn-4-31 tty=/dev/pts/27 ip=189.131.72.175 :: REMOTO: desconexion desde ip=127.0.0.1
+[2025-08-13 19:44:35] CMD pid=31229 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 19:51:54] CMD pid=13744 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: clear
+[2025-08-13 19:52:13] CMD pid=13744 user=mn-4-31 tty=/dev/pts/8 ip=189.131.72.175 :: Comando terminó con código 0: sleep 35&
